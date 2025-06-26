@@ -1,7 +1,6 @@
 package main
 
 import (
-	"flag"
 	"gomodules.xyz/logs"
 	"k8s.io/klog/v2"
 )
@@ -10,7 +9,6 @@ func main() {
 	logs.Init(nil, true)
 	defer logs.FlushLogs()
 
-	flag.Parse()
 	realMain()
 }
 
